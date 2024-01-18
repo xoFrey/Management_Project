@@ -764,3 +764,21 @@ h2 {
   top: 5rem;
   left: 25rem;
 }
+
+/* # ===== Footer =====*/
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80vw;
+}
+
+.links div {
+  display: flex;
+  flex-direction: column;
+}
