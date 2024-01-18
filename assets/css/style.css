@@ -24,3 +24,45 @@
 html {
   font-size: 62.5%;
 }
+
+:root {
+  --maincolor: #05796b;
+  --secondary: #f57059;
+  --subtext: #757095;
+  --subsubtext: #8593a3;
+}
+
+/*# ===== Header ===== */
+/*!Nav Bar */
+
+header {
+  background: radial-gradient(
+    circle at top right,
+    #49a3f871,
+    #0fd1ba00,
+    transparent
+  );
+
+  height: 100vh;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5.5rem 7vw;
+}
+
+header nav div:nth-of-type(1) {
+  display: flex;
+  gap: 3.8rem;
+}
+header nav div:nth-of-type(2) {
+  display: flex;
+  gap: 4.9rem;
+}
+
+/* ! Nav Links */
+
+header nav a {
+}
