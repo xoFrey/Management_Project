@@ -193,13 +193,14 @@ h6 {
   left: -80px;
 }
 
-/* ! Main Section */
+/* ! Main Section company icons */
 
-main section {
+.companies {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3.8rem;
+  margin-bottom: 14rem;
 }
 
 .icons {
@@ -209,7 +210,54 @@ main section {
   padding: 0 2vw;
 }
 
-.icon img {
-  width: 1370px;
-  height: 21px;
+/* !Section Services */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 25vw;
+}
+
+.services p {
+  font-family: AnekB, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: Manrope, sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: -1.2px;
+  text-align: center;
+  margin-bottom: 5.6rem;
+}
+
+/* ! Section grid  */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.7rem;
+  align-items: center;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* ! grid divs  */
+.grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.grid div h3 {
+  font-family: Manrope, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
 }
