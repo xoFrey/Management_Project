@@ -210,7 +210,7 @@ h6 {
 .icons {
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 95vw;
   padding: 0 2vw;
 }
 
@@ -683,6 +683,15 @@ h2 {
   margin-bottom: 3.8rem;
 }
 
+.testi {
+  font-family: AnekB, sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #3734a9;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .stars {
   display: flex;
   flex-direction: column;
@@ -768,17 +777,86 @@ h2 {
 /* # ===== Footer =====*/
 footer section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 15.6rem;
+  align-items: flex-start;
+}
+
+.danial h3 {
+  font-family: Manrope, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+
+.danial p {
+  font-family: Manrope, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%;
+  color: var(--subtext);
+  margin-bottom: 3.1rem;
+}
+
+.danial {
+  padding-left: 10vw;
+}
+
+.danial img {
+  margin-right: 1.6rem;
 }
 
 .links {
   display: flex;
   justify-content: space-evenly;
-  width: 80vw;
+  gap: 10.2rem;
+  padding-right: 10vw;
+  margin-bottom: 10rem;
 }
 
 .links div {
   display: flex;
   flex-direction: column;
+  gap: 1.8rem;
 }
+
+.links div h3 {
+  font-family: Manrope, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.links div a {
+  font-family: Manrope, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  color: black;
+}
+
+.copyright {
+  text-align: center;
+  font-family: Manrope, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: -0.48px;
+  margin-bottom: 5.2rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.copy {
+  border-bottom: 1px solid #f8f8fe;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+/* # MEDIA QUERIES  */
+
+/* # RESPONSIVITÄT BIS TABLET GUCKEN */
