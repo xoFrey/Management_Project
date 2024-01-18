@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Acme;
+  src: url(../fonts/Acme/Acme-Regular.ttf);
+}
+@font-face {
+  font-family: AnekBangla;
+  src: url(../fonts/Anek_Bangla/AnekBangla-VariableFont_wdth\wght.ttf);
+}
+@font-face {
+  font-family: AnekGuj;
+  src: url(../fonts/Anek_Gujarati/AnekGujarati-VariableFont_wdth\wght.ttf);
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
