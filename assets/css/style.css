@@ -66,6 +66,15 @@ header nav div:nth-of-type(2) {
   gap: 4.9rem;
 }
 
+.vanish a {
+  display: block;
+}
+
+.burger {
+  width: 32px;
+  height: 32px;
+}
+
 /* ! Nav Links */
 
 .logo {
@@ -153,6 +162,7 @@ h6 {
 
 .users {
   display: flex;
+  justify-content: center;
 }
 
 .users h5 {
@@ -708,7 +718,7 @@ h2 {
 
 .stars p {
   font-family: Manrope;
-  font-size: 30px;
+  font-size: clamp(2rem, 1.33328rem + 1.1574vw, 3rem);
   font-weight: 700;
   line-height: 137%;
   letter-spacing: -0.6px;
@@ -997,4 +1007,27 @@ footer section {
 /* ! Phone  */
 
 @media only screen and (max-width: 576px) {
+  .vanish a {
+    display: none;
+  }
+
+  header nav {
+    justify-content: space-evenly;
+  }
+
+  .grid {
+    padding: 0 3vw;
+    gap: 1rem;
+  }
+
+  .plans {
+    gap: 1rem;
+    padding: 0 1vw;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 0 8vw;
+  }
 }
