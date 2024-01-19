@@ -56,17 +56,13 @@ header nav {
   padding: 5.5rem 7vw;
 }
 
-header nav div:nth-of-type(2) {
-  display: flex;
-  align-items: center;
-}
-
 header nav div:nth-of-type(1) {
   display: flex;
   gap: 3.8rem;
 }
 header nav div:nth-of-type(2) {
   display: flex;
+  align-items: center;
   gap: 4.9rem;
 }
 
@@ -118,7 +114,6 @@ header section {
 
 h6 {
   font-family: Acme, sans-serif;
-  /* font-size: 2.2rem; */
   font-size: clamp(1.1rem, 3.52rem + 1.2731vw, 2.2rem);
   font-weight: 400;
   margin-bottom: 0.3rem;
@@ -162,7 +157,7 @@ h6 {
 
 .users h5 {
   font-family: Manrope, sans-serif;
-  font-size: 2.6rem;
+  font-size: clamp(2rem, 1.26672rem + 0.9259vw, 2.2rem);
   font-weight: 700;
   line-height: 200%;
   letter-spacing: -1.3px;
@@ -240,7 +235,7 @@ h6 {
 
 h2 {
   font-family: Manrope, sans-serif;
-  font-size: 4rem;
+  font-size: clamp(3rem, 0.66672rem + 2.3148vw, 4rem);
   font-weight: 800;
   line-height: 130%;
   letter-spacing: -1.2px;
@@ -322,7 +317,6 @@ h2 {
 .process {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
   margin-bottom: 16.2rem;
@@ -511,7 +505,6 @@ h2 {
 .try-free article h2 {
   text-align: left;
   padding-right: 5vw;
-  padding-right: 5vw;
 }
 
 .try-free article p {
@@ -524,7 +517,7 @@ h2 {
   margin-bottom: 4.8rem;
 }
 
-.tes {
+.try {
   display: inline;
   font-size: 1.8rem;
 }
@@ -878,6 +871,127 @@ footer section {
 /* !Tablet */
 
 @media only screen and (max-width: 768px) {
+  /* !Header */
+  .logo {
+    width: 8vw;
+    text-align: center;
+  }
+  header nav {
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 5.5rem 2vw;
+  }
+
+  header section {
+    align-items: flex-start;
+  }
+  /* - picture highlights */
+
+  .high-1 {
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    width: 70px;
+  }
+  .high-2 {
+    position: absolute;
+    width: 10rem;
+    bottom: 100px;
+    left: -50px;
+  }
+  .users p {
+    font-weight: 800;
+  }
+
+  /*!Companies */
+
+  .companies {
+    margin-bottom: 10rem;
+  }
+  /* !Services */
+  .services {
+    padding: 0 10vw;
+  }
+
+  /* !Process */
+  .process {
+    margin-bottom: 5rem;
+  }
+  .process article {
+    padding: 0 15vw;
+  }
+
+  /* !All steps */
+  .all-steps {
+    padding: 0 5vw;
+  }
+
+  .vector {
+    padding-top: 10vw;
+  }
+
+  #number {
+    left: -10px;
+  }
+
+  .steps p {
+    padding: 0;
+  }
+  /* !apps  */
+
+  .apps article h2 {
+    padding: 0 10vw;
+  }
+  /* !try-free */
+  .try-free {
+    padding: 0 5vw;
+    margin-bottom: 6rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .try-free article p {
+    padding-right: 5vw;
+  }
+
+  /* !Section Plans */
+  .free-prem h2 {
+    padding: 0 15vw;
+  }
+  .free-prem p {
+    padding: 0 15vw;
+  }
+
+  /* ! Box */
+  .box p {
+    padding: 0;
+  }
+
+  /* !testimonials */
+
+  .testimonials article {
+    gap: 0;
+  }
+
+  /* !discover */
+  .discover {
+    justify-content: flex-start;
+    height: 40vh;
+    padding: 0 5vw;
+  }
+  .discover article {
+    padding: 10vw 0.5vw;
+  }
+
+  /* !Footer */
+  footer section {
+    flex-direction: column;
+  }
+
+  .danial {
+    margin-bottom: 5rem;
+  }
 }
 
 /* ! Phone  */
