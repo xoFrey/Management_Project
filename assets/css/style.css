@@ -118,14 +118,15 @@ header section {
 
 h6 {
   font-family: Acme, sans-serif;
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
+  font-size: clamp(1.1rem, 3.52rem + 1.2731vw, 2.2rem);
   font-weight: 400;
   margin-bottom: 0.3rem;
 }
 
 .manage h1 {
   font-family: Manrope, sans-serif;
-  font-size: 6rem;
+  font-size: clamp(3rem, 1rem + 3.4723vw, 6rem);
   font-weight: 800;
   line-height: 133%;
   letter-spacing: -1.8px;
@@ -135,7 +136,7 @@ h6 {
 .manage p {
   color: var(--subtext);
   font-family: Manrope, sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 1.3333rem + 0.463vw, 2rem);
   line-height: 175%;
   letter-spacing: -0.4px;
   padding-right: 4vw;
@@ -210,7 +211,9 @@ h6 {
 .icons {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 95vw;
+  gap: 2rem;
   padding: 0 2vw;
 }
 
@@ -246,14 +249,13 @@ h2 {
 }
 
 /* ! Section grid  */
-
+/* # responsive und wrap weg */
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
   gap: 2.7rem;
-  align-items: center;
-  width: 80vw;
-  margin: 0 auto;
+  padding: 0 10vw;
   margin-bottom: 12.8rem;
 }
 
@@ -263,6 +265,7 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
   background-color: white;
   padding: 1vw 3.5vw;
   border: 1px solid #e7e7e7;
@@ -328,6 +331,7 @@ h2 {
 .all-steps {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* !Section Process Article */
@@ -355,7 +359,16 @@ h2 {
 
 .all-steps {
   padding: 0 10vw;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
 }
+
+.vector {
+  padding-top: 5vw;
+  width: 50%;
+}
+
 .steps {
   position: relative;
 }
@@ -368,7 +381,6 @@ h2 {
   left: 20px;
   border-radius: 100%;
   background-color: #f6f6f7;
-  box-shadow: 8px 8px 80px 0px rgba(167, 167, 167, 0.8);
   padding: 0.9rem;
   width: 55px;
   color: rgb(0, 0, 0);
@@ -411,6 +423,7 @@ h2 {
   font-size: 1.6rem;
   line-height: 200%;
   letter-spacing: -0.32px;
+  padding: 0 3vw;
 }
 
 /* ! Section APP Download */
@@ -862,4 +875,12 @@ footer section {
 
 /* # RESPONSIVITÄT BIS TABLET GUCKEN */
 
-/* Tablet  */
+/* !Tablet */
+
+@media only screen and (max-width: 768px) {
+}
+
+/* ! Phone  */
+
+@media only screen and (max-width: 576px) {
+}
