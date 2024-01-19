@@ -777,7 +777,7 @@ h2 {
 /* # ===== Footer =====*/
 footer section {
   display: flex;
-  gap: 15.6rem;
+  gap: rem;
   align-items: flex-start;
 }
 
@@ -808,9 +808,10 @@ footer section {
 .links {
   display: flex;
   justify-content: space-evenly;
-  gap: 10.2rem;
-  padding-right: 10vw;
+  padding-right: 5vw;
+  padding-left: 3vw;
   margin-bottom: 10rem;
+  width: 100vw;
 }
 
 .links div {
@@ -860,3 +861,5 @@ footer section {
 /* # MEDIA QUERIES  */
 
 /* # RESPONSIVITÄT BIS TABLET GUCKEN */
+
+/* Tablet  */
